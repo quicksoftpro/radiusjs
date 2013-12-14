@@ -10,7 +10,7 @@ radiusjs was developed to provide a library which gives code level access to typ
 
 A code level interface to Radius which provides event handlers for recieved Radius packets and methods to send/reply allows you to completely customize authentication and accounting schemes. Our initial drive in creating this project was to use a mongodb database as the backend of Radius.
 
-License
+##License
 
 The MIT License (MIT) Copyright (c) 2013 QuickSoftPro.
 
@@ -20,15 +20,15 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-Requirements
+##Requirements
 
 Tested with node v0.10.20
 
-Example
+##Example
 
 Look at radAcc.js and radAuth.js for example Accounting and Authentication server implementations.
 
-Usage
+##Usage
 
 AVP type 26 (vendorids)
 
