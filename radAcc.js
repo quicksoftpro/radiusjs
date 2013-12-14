@@ -1,6 +1,9 @@
 var dgram = require("dgram");
 var accServer = dgram.createSocket("udp4");
 var radius = require('./radius');
+var conf = require("./conf.js").config;
+
+
 
 accServer.on("message", function (msg, rinfo) {
     HandleIncomingAccRequest(msg, rinfo, accServer, function () {
@@ -14,12 +17,12 @@ accServer.on("listening", function () {
 });
 
 radius.LoadDicts(function () {
-    accServer.bind(1813);
+    accServer.bind(conf.radaccport);
 });
 
 function HandleIncomingAccRequest(msg, rinfo, server,callback) {
 
-	var secret = "s3cr3t";
+	var secret = conf.radsecret;
 
 	var packet = radius.ParsePacket(msg, secret);
 
